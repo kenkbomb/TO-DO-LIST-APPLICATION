@@ -7,22 +7,22 @@ $("#button").click(function()
     li.append(inputval);
 
 
-    // let inputval =  $('#input').val();
+    
     let crossOutButton = $('<crossOutButton></crossOutButton>');
     crossOutButton.append(document.createTextNode('X'));
-    $(crossOutButton).addClass('crossOutButton');
+    // $(crossOutButton).addClass('crossOutButton');
     li.append(crossOutButton);
-    // inputval.append(crossOutButton);
+    
     
 
 
 
-    $('#list').append(li);//adds the <li> element as the value taken from the form and also on this line, appends another 'button' element to the <li>....
+    $('#list').append(li);
   
 
         $('li').on('dblclick', function()
     {
-        alert(this.innerText);
+        // alert(this.innerText);
         let listItem = $(this);
         listItem.addClass('strike');
 
@@ -34,7 +34,7 @@ $("#button").click(function()
             
         let listItem = $(this).parent();
         listItem.addClass('delete');
-        alert('test');
+        // alert('test');
 
 
     });
